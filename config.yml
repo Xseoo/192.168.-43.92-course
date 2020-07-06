@@ -1,0 +1,16 @@
+title: 192.168. 43.92
+description: Kkkk
+template:
+  repo: 192.168.-43.92-template
+  name: 192.168.-43.92
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
